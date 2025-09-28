@@ -1,0 +1,8 @@
+---
+import AdminLayout from '../../layouts/AdminLayout.astro';
+import UsersContent from '../../components/UsersContent.tsx';
+---
+
+<AdminLayout title="Users - Admin Dashboard">
+  <UsersContent client:load />
+</AdminLayout>

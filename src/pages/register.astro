@@ -1,0 +1,64 @@
+---
+import Layout from '../layouts/Layout.astro';
+import RegisterApp from '../components/RegisterApp.tsx';
+---
+
+<Layout title="Register">
+  <main class="min-h-screen flex items-center justify-center bg-gray-50">
+    <div class="max-w-md w-full space-y-8">
+      <div>
+        <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900">
+          Create your account
+        </h2>
+      </div>
+      <RegisterApp client:load />
+    </div>
+  </main>
+</Layout>
+
+<style>
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  }
+  .min-h-screen {
+    min-height: 100vh;
+  }
+  .flex {
+    display: flex;
+  }
+  .items-center {
+    align-items: center;
+  }
+  .justify-center {
+    justify-content: center;
+  }
+  .bg-gray-50 {
+    background-color: #f9fafb;
+  }
+  .max-w-md {
+    max-width: 28rem;
+  }
+  .w-full {
+    width: 100%;
+  }
+  .space-y-8 > * + * {
+    margin-top: 2rem;
+  }
+  .mt-6 {
+    margin-top: 1.5rem;
+  }
+  .text-center {
+    text-align: center;
+  }
+  .text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+  .font-extrabold {
+    font-weight: 800;
+  }
+  .text-gray-900 {
+    color: #111827;
+  }
+</style>
