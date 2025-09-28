@@ -1,5 +1,16 @@
 @import "tailwindcss";
 
+/* Universal box-sizing reset to prevent width issues */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Ensure proper margin and padding reset */
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
 :root {
   --color-primary: 59 130 246;
   --color-primary-dark: 37 99 235;

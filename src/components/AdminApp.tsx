@@ -49,10 +49,11 @@ const AdminApp: React.FC<AdminAppProps> = ({ children }) => {
       <QueryClientProvider client={queryClient}>
         <div className="flex h-screen bg-gray-50 dark:bg-gray-900">
         {/* Sidebar - Fixed width using box-border */}
-        <div className="fixed top-0 left-0 w-64 h-full bg-gray-800 dark:bg-gray-900 text-white z-50 box-border">
-          <div className="p-4 border-b border-gray-700 dark:border-gray-600">
-            <h2 className="text-xl font-bold">Admin Panel</h2>
+        <div className="fixed top-0 left-0 w-64 h-full bg-gray-800 dark:bg-gray-700 text-white z-50 box-border">
+          <div className="flex items-center p-4 bg-white dark:bg-gray-800 border-b border-gray-700 dark:border-gray-600 h-[69px]">
+            <h2 className="text-xl font-bold mb-0 text-gray-900 dark:text-white">LOGO HERE</h2>
           </div>
+
 
           <nav className="p-4">
             <a
@@ -93,7 +94,7 @@ const AdminApp: React.FC<AdminAppProps> = ({ children }) => {
           {/* Top Navigation */}
           <header className="bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700 px-6 py-4">
             <div className="flex justify-between items-center">
-              <h1 className="text-xl font-semibold text-gray-900 dark:text-white">Dashboard</h1>
+              <h1 className="text-xl font-semibold text-gray-900 dark:text-white"></h1>
 
               <div className="flex items-center space-x-4">
                 <span className="text-sm text-gray-600 dark:text-gray-300">

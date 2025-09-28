@@ -1,4 +1,5 @@
 import React from 'react';
+import WidthTestComponent from './WidthTestComponent';
 
 const DashboardContent: React.FC = () => {
   const mockUsers = [
@@ -84,6 +85,11 @@ const DashboardContent: React.FC = () => {
             </tbody>
           </table>
         </div>
+      </div>
+
+      {/* Box-sizing and width test section */}
+      <div className="mt-8 bg-white dark:bg-gray-800 rounded-lg shadow-sm">
+        <WidthTestComponent />
       </div>
     </div>
   );
